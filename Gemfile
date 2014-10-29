@@ -2,37 +2,51 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.16'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'pg'
+gem 'thin'
+gem 'devise'
+gem 'omniauth-google-oauth2'
+gem 'nested_form'
+gem 'auto_html'
+gem 'will_paginate'
+gem 'delayed_job_active_record'
+#gem 'newrelic_rpm'
+gem 'paperclip'
+gem 'ckeditor'
+gem 'request-log-analyzer'
+gem 'exception_notification'
 
+group :development do 
+    gem 'better_errors'
+    gem 'binding_of_caller'
+    gem 'quiet_assets'
+    gem 'mailcatcher'
+    gem 'hirb'
+    gem 'railroady'
+    #gem 'populator'
+    #gem 'faker'
+    gem 'zeus'
+    gem 'debugger'
+end
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+	gem 'therubyracer'
+	gem 'less-rails' 
+	# gem 'libv8'
+    gem 'sass-rails',   '~> 3.2.3'
+  	gem 'coffee-rails', '~> 3.2.1'
+  	gem 'uglifier', '>= 1.0.3'
+    gem 'jquery-ui-rails'
+    gem 'compass-rails'
+    gem 'bootstrap-sass', '~> 3.1.1'
+    gem 'bootstrap-slider-rails'
+    #gem 'bootstrap-wysihtml5-rails'
+    gem 'bootstrap-colorpicker-rails'
+    gem 'jquery-datatables-rails', '~> 2.1.10.0.3'
+    #gem 'jquery_datepicker'
+    gem 'flot-rails'
+    gem 'jquery-sparkline-rails', git: 'https://github.com/RobAtHedtek/jquery-sparkline-rails.git'
+    gem 'json'
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
